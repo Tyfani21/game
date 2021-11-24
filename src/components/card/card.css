@@ -1,0 +1,6 @@
+.box{
+    color: aliceblue;
+    background-color: orange;
+    box-shadow: 0 0 1em gold;
+    width: 16rem;
+}
