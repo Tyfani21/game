@@ -1,0 +1,44 @@
+@import './../../assets/css/colors.css';
+
+.nav-barra{
+    display: flex;
+    width: 99.9vw;
+    height: 13vh;
+    color: var(--laranja);
+    background-color: var(--preto);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    width: 100%;
+    padding-left: 15rem;
+}
+.barra-form{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    margin: 1rem;
+    justify-content: end;
+    text-align: end;
+    align-items: end;
+}
+.input-jogo{
+    padding: .5rem;
+    background-color: transparent;
+    color: var(--laranja-claro);
+}
+.input-jogo:hover{
+    background-color: var(--azul);
+    color: var(--branco);
+}
+.input-sub{
+    background-color: transparent;
+    color: var(--laranja);
+    padding: .5rem;
+    width: 5vh;
+}
+.input-sub:hover{
+    background-color: var(--azul);
+    color: var(--branco);
+}
