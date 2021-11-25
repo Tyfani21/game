@@ -19,9 +19,9 @@ const Card = (props) => {
     }
     return (
     <div className="box">
-        <a className='card-item' href={props.linlItem}>
+        <div className='card-item' onClick={goToPage}>
         <div className="img">
-            <img src={props.imagem} alt={props.titulo}></img>
+            <img src={props.img} alt={props.titulo}></img>
         </div>
         <div className="titulo">
             <h2 className='card-title'>{props.titulo}</h2>
@@ -29,7 +29,7 @@ const Card = (props) => {
         <div className="Preço">
           <span className='card-preço'>{'R$ '+ props.preco}</span> 
         </div>
-        </a> 
+        </div> 
         <button className='wishlist' onClick={wishGame}>
         <FaRegHeart />
       </button>

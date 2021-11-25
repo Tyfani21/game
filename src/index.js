@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
+import Barra from './components/navBar/barra'
+import Footer from './components/footer/footer'
 import {
   BrowserRouter,
   Routes,
@@ -11,11 +13,17 @@ import {
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Barra/>
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/lista' element='wish' />
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={"<Login />"} />
+        <Route path="/register" element={"< Register/>"} />
+        <Route path="/profile" element={"< Profile/>"} />
+        <Route path="/game" element={"<Game />"} />
+        <Route path="/wishlist" element={"<WishList />"} />
       </Routes>
     </BrowserRouter>
+    <Footer />
     </React.StrictMode>,
   document.getElementById('root')
 );
