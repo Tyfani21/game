@@ -1,0 +1,62 @@
+@import './../../assets/css/colors.css';
+.img {
+    width: 100vw;
+  }
+  
+  .barr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .disp {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--preto);
+  }
+  
+  .mais {
+    background-color: var(--laranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 2rem 0.8rem;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  
+  .mais a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.5em;
+  }
+  
+  .classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square {
+    background-color: var(--azul-claro);
+    height: 3rem;
+    border-radius: 0.8rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  .class-text {
+    padding: 0 1rem;
+    width: 10rem;
+    color: var(--preto);
+    font-size: 1em;
+  }

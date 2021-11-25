@@ -1,0 +1,20 @@
+@import './../../assets/css/colors.css';
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+    flex-direction: column;
+}
+.social{
+    color: var(--laranja-claro);
+    padding: .5rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.cred{
+    color: var(--laranja);
+}
