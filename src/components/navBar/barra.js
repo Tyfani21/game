@@ -1,13 +1,9 @@
 import './barra.css';
-import { FaRegQuestionCircle, FaHeart, FaRegUser } from 'react-icons/fa';
+import { FaRegQuestionCircle, FaHeart, FaUserPlus, FaGamepad, FaUserCircle } from 'react-icons/fa';
 const Barra = () => {
     return (
         <div className='nav-barra'>
-            <h1>Origin Games</h1>
-            <form className='barra-form'>
-            <input className='input-jogo' placeholder='Digite o jogo' type='text' required/>
-            <input className='input-sub' type='submit' value='Procurar'></input>
-            </form>
+            <h1><a href='/'>Origin Games</a></h1>
             <div className='bar-links'>
         <ul className='bar-links-list'>
           <li>
@@ -17,18 +13,34 @@ const Barra = () => {
             </a>
           </li>
           <li>
-            <a className='itens' href='#!'>
+            <a className='itens' href='/whishList'>
               <FaHeart />
               <span className='text'>Lista de Desejos</span>
             </a></li>
           <li>
-            <a className='itens' href='#!'>
-              <FaRegUser />
-              <span className='text'>Fazer Login/Criar conta</span>
+            <a className='itens' href='/login'>
+              <FaUserCircle /><span id='sup' className='text'>Login</span>
+            </a>
+          </li>  
+        <li>
+            <a className='itens' href='/register'>
+              <FaUserPlus />
+              <span id='sup' className='text'>Criar</span>
+            </a>
+          </li>
+          <li>
+            <a className='itens' href='/profile'>
+              <FaGamepad />
+              <span id='sup' className='text'>Perfil</span>
             </a>
           </li>
         </ul>
       </div>
+      <form className='barra-form'>
+            <input className='input-jogo' placeholder='Digite o jogo' type='text' required/>
+            <input className='input-sub' type='submit' value='Procurar'></input>
+            </form>
+            
         </div>
     )
 }

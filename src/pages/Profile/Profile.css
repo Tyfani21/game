@@ -1,0 +1,21 @@
+.pefil {
+    display: flex;
+    width: 100%;
+}
+  
+.perfil h2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+.perfil-img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+.perfil-img img {
+    width: 30%;
+    padding: 1rem;
+    }

@@ -25,7 +25,7 @@ const Home = () => {
         <div className='background'>
             <section className='content'>
                 
-    <Slider id=' '
+    <Slider id='cd310662-5d46-4852-aace-2194ed21ada5'
     classNumber='18'
     classText='Violência, Conteúdo Sexual'/>
     <Container title='Destaques'>

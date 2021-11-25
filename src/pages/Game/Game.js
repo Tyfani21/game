@@ -28,9 +28,9 @@ const Game = () => {
             <div className='jg-header'>
                 <img src={jogo.img} alt={jogo.nome}/>
             </div>
-            <div className='game-wish'>
+            <div className='jg-wish'>
         <h2>{jogo.nome}</h2>
-        <div className='game-like'>
+        <div className='jg-like'>
           <span>R$ {jogo.preco}</span>
           <a href='!#'>
             <FaRegHeart />

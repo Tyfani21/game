@@ -1,0 +1,49 @@
+@import './../../assets/css/colors.css';
+.jg-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.jg-header img {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+  }
+  
+  .jg-wish {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .jg-like {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--laranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jg-wish a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--laranja);
+    padding: 0 0 0 1rem;
+  }
+  
+  .jg p {
+    padding: 1rem 6rem 2rem;
+    text-align: justify;
+    font-size: 1.2em;
+  }
+  
+  .jg h3 {
+    padding: 0 6rem;
+    text-align: justify;
+    font-size: 1.2em;
+    color: var(--laranja);
+  }
