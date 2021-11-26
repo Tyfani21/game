@@ -4,29 +4,29 @@ import './slider.css';
 import axios from 'axios'
 
 const Slider = (props) => {
-    const [jogo, setJogo] = useState([]);
-    const [mounted, setMoounted] = useState(false);
+    const [game, setGame] = useState([]);
+    const [mounted, setMounted] = useState(false);
 
     const getData = async () => {
-        await axios.get(`/jogos/find/${props.id}`)
+        await axios.get(`/game/find/${props.id}`)
         .then(response => {
             if(mounted){
-                setJogo(response.data)
+                setGame(response.data)
             }
         })
     }
     useEffect(() => {
-        setMoounted(true)
+        setMounted(true)
         getData()
       }, [mounted])
     return(
         <div>
-            <img className='img' src={jogo.img} alt={jogo.nome}/>
+            <img className='img' src={game.image} alt={game.name}/>
             <div className='barr'>
                 <span className='disp'>Já disponível</span>
                 <button className='mais'> <a href={props.cardLink}>Saiba Mais <FaAngleRight/></a></button>
-            <div className='classificacao'> <div className='square'>{props.classNumber}</div></div>
-            <span className='class-text'>{props.classText}</span>
+            <div className='classificacao'> <div className='square'>{props.classificationNumber}</div></div>
+            <span className='class-text'>{props.classificationText}</span>
             </div>
         </div>
     )

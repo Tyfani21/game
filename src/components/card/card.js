@@ -21,13 +21,13 @@ const Card = (props) => {
     <div className="box">
         <div className='card-item' onClick={goToPage}>
         <div className="img">
-            <img src={props.img} alt={props.titulo}></img>
+            <img src={props.image} alt={props.name}></img>
         </div>
         <div className="titulo">
-            <h2 className='card-title'>{props.titulo}</h2>
+            <h2 className='card-title'>{props.name}</h2>
         </div>
         <div className="Preço">
-          <span className='card-preço'>{'R$ '+ props.preco}</span> 
+          <span className='card-preço'>{'R$ '+ props.price}</span> 
         </div>
         </div> 
         <button className='wishlist' onClick={wishGame}>

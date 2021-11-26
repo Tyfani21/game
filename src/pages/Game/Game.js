@@ -26,12 +26,12 @@ const Game = () => {
     return(
         <div className='jg'>
             <div className='jg-header'>
-                <img src={jogo.img} alt={jogo.nome}/>
+                <img src={jogo.image} alt={jogo.nome}/>
             </div>
             <div className='jg-wish'>
-        <h2>{jogo.nome}</h2>
+        <h2>{jogo.name}</h2>
         <div className='jg-like'>
-          <span>R$ {jogo.preco}</span>
+          <span>R$ {jogo.price}</span>
           <a href='!#'>
             <FaRegHeart />
           </a>

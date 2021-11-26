@@ -1,45 +1,43 @@
-import Slider from '../../components/Slider/slider';
-import Container from '../../components/Container/Container';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-import Card from '../../components/card/card';
+import Slider from "../../components/Slider/slider";
+import Container from "../../components/Container/Container";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import Card from "../../components/card/card";
 
 const Home = () => {
-    const [jogos, setJogos] = useState([]);
-    const [mounted, setMounted] = useState(false)
-    const getData = async () =>{
-        await axios.get('/game/findMany')
-        .then(response => {
-            if(mounted){
-                setJogos(response.data)
-            }
-        })
-    }
-    useEffect(() => {
-    
-            setMounted(true)
-            getData()
-    }, [mounted])
-    
-    return (
-        <div className='background'>
-            <section className='content'>
-                
-    <Slider id='cd310662-5d46-4852-aace-2194ed21ada5'
-    classNumber='18'
-    classText='Violência, Conteúdo Sexual'/>
-    <Container title='Destaques'>
-        {jogos.map(jogo =>(
+  const [game, setGame] = useState([]);
+  const [mounted, setMounted] = useState(false);
+  const getData = async () => {
+   try{
+    const response = await axios.get("https://nintendo-shop.herokuapp.com/game/findMany");
+    setGame(response.data)}catch(err){console.log(err)}
+  };
+  useEffect(() => {
+    setMounted(true);
+    getData();
+  }, [mounted]);
+  console.log(game)
+  return (
+    <div className="background">
+      <section className="content">
+        <Slider
+          id="4aaa14cc-7bf1-4b8e-85a9-53907b0ff1ca"
+          classificationNumber="18"
+          classificationText="Violência, Conteúdo Sexual"
+        />
+        <Container title="Destaques">
+          {game.map((game) => (
             <Card
-            id={jogo.id}
-            img={jogo.img}
-            title={jogo.nome}
-            preco={jogo.preco}
-            key={jogo.id}/>
-        ))}
-    </Container>
-            </section>
-        </div>
-    )
-}
-export default Home
+              id={game.id}
+              image={game.image}
+              name={game.name}
+              price={game.price}
+              key={game.id}
+            />
+          ))}
+        </Container>
+      </section>
+    </div>
+  );
+};
+export default Home;

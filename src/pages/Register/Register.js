@@ -16,7 +16,7 @@ export default function Register() {
     const user = {
       nome: nome,
       email: email,
-      nick: nick,
+      nickname: nick,
       password: pass,
       passwordConfirmation: passConfirmation
     }
